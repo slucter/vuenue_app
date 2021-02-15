@@ -1,0 +1,32 @@
+.router-link-exact-active{
+    font-weight: bold;
+}
+.navbar{
+    padding: .5rem 0;
+}
+#app{
+    font-family: 'Montserrat', sans-serif;
+}
+.card-img-top{
+    height: 200px!important;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card{
+    border-radius: 15px;
+}
+.img-fluid{
+    border-radius: 15px;
+}
+.breadcrumb{
+    background-color: transparent;
+    padding: 0;
+}
+.breadcrumb-item a{
+    color: rgb(24, 24, 24)!important;
+}
+.breadcrumb .active{
+    font-weight: bold!important;
+    color: rgb(90, 90, 90)!important;
+}

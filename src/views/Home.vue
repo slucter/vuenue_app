@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Hero />
+    <!-- Heading -->
+    <HeadingFood />
+    <!-- Card Food -->
+    <CardSection :urlGet="url"/>
+    <!-- Footer -->
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Hero from '../components/Modules/Hero'
+import CardSection from '../components/Content/CardSection'
+import HeadingFood from '../components/Content/HeadingFood'
 
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
+    Hero,
+    CardSection,
+    HeadingFood
+  },
+  data () {
+    return {
+      url: 'http://localhost:3000/best-products'
+    }
   }
 }
 </script>
+
+<style scoped>
+</style>
